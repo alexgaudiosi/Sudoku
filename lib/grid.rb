@@ -1,21 +1,20 @@
 class Grid
 
 	def initialize(puzzle)
-	@cells
-	end
-
-	def grid_size(puzzle)
-		puzzle.length
-	end
-
-	def convert(puzzle)
 		@cells = puzzle.chars.map {|i| i.to_i}
 	end
 
+	def grid_size
+		@cells.length
+	end
 
 
 
-	attr_reader :cells
+	def solved?
+	end
+
+
+	attr_accessor :cells
 
 	def solve
 	
@@ -24,4 +23,5 @@ class Grid
 
 
 end
+
 
