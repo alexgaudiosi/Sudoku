@@ -18,10 +18,3 @@ class Cell
 
 end
 
-
-
-
-
-
-
-
